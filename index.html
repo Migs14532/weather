@@ -51,11 +51,30 @@
     gap: 50px;
     margin: 10%;
     }
-
-
+    #cityInput {
+        width: 10%;
+        height: 3vh;
+        border: transparent;
+        box-shadow: 2px 2px 0 0;
+        background-color: white;
+    }
+    #searchButton {
+        width: 10%;
+        height: 3vh;
+        border: transparent;
+        box-shadow: 2px 2px 0 0;
+        background-color: white;
+    }
 </style>
 <body>
     <h1>Weather Update - Iligan City</h1>
+    <div class="header">
+        <a href="index.html"><img src="weather_logo.png"></a>
+        <div class="searchWrapper">
+            <input type="text" id="cityInput" placeholder="Search City Name">  
+            <button id="searchButton">Search</button>
+        </div>
+    </div>
     <div id="weather">
     </div>
         <div class= "map">
