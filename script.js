@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         const weatherContainer = document.getElementById('weather');
         weatherContainer.innerHTML = `<p>Unable to retrieve weather data: ${error.message}</p>`;
     }
+    
     fetchWeatherData('Iligan');
 
     document.getElementById('searchButton').addEventListener('click', () => {  
@@ -59,4 +60,3 @@ document.addEventListener('DOMContentLoaded', async function() {
         }
     });
 });
- 
