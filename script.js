@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         weatherContainer.innerHTML += `
           
         <div class="weather-container">
-        <div class="weather-items">
+        <div class="weather-item">
             <img src="https:${element.day.condition.icon}">
         </div>
         <div class="weather-item">
