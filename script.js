@@ -47,5 +47,16 @@ document.addEventListener('DOMContentLoaded', async function() {
         const weatherContainer = document.getElementById('weather');
         weatherContainer.innerHTML = `<p>Unable to retrieve weather data: ${error.message}</p>`;
     }
- });
+    fetchWeatherData('Iligan');
+
+    document.getElementById('searchButton').addEventListener('click', () => {  
+        const cityInput = document.getElementById('cityInput').value;  
+        if (cityInput) {
+            document.querySelector('.location-label').innerText = cityInput;
+            fetchWeatherData(cityInput);
+        } else {
+            alert('Please enter a city name');
+        }
+    });
+});
  
